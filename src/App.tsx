@@ -1,16 +1,13 @@
-import './App.css'
-import Item from "./components/Item"
+import "./App.css";
+import Item from "./components/Item";
+import { MoneyProvider } from "./context/MoneyContext";
 
 function App() {
-
   return (
-    <>
-
-    <Item />
-
-    </>
-
-  )
+    <MoneyProvider>
+      <Item />
+    </MoneyProvider>
+  );
 }
 
-export default App
+export default App;

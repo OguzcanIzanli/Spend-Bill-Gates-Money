@@ -1,227 +1,272 @@
 [
-    {
-        "name": "Big Mac",
-        "price": 2,
-        "img": "../public/images/big-mac.jpg"
-    },
-    {
-        "name": "Flip Flops",
-        "price": 3,
-        "img": "../public/images/flip-flops.jpg"
-    },
-    {
-        "name": "Coca-Cola Pack",
-        "price": 5,
-        "img": "../public/images/coca-cola.jpg"
-    },
-    {
-        "name": "Movie Ticket",
-        "price": 12,
-        "img": "../public/images/movie-ticket.jpg"
-    },
-    {
-        "name": "Book",
-        "price": 15,
-        "img": "../public/images/book.jpg"
-    },
-    {
-        "name": "Lobster Dinner",
-        "price": 45,
-        "img": "../public/images/lobster-dinner.jpg"
-    },
-    {
-        "name": "Video Game",
-        "price": 60,
-        "img": "../public/images/video-game.jpg"
-    },
-    {
-        "name": "Amazon Echo",
-        "price": 99,
-        "img": "../public/images/amazon-echo.jpg"
-    },
-    {
-        "name": "Year of Netflix",
-        "price": 100,
-        "img": "../public/images/year-of-netflix.jpg"
-    },
-    {
-        "name": "Air Jordans",
-        "price": 125,
-        "img": "../public/images/air-jordans.jpg"
-    },
-    {
-        "name": "Airpods",
-        "price": 199,
-        "img": "../public/images/airpods.jpg"
-    },
-    {
-        "name": "Gaming Console",
-        "price": 299,
-        "img": "../public/images/gaming-console.jpg"
-    },
-    {
-        "name": "Drone",
-        "price": 350,
-        "img": "../public/images/drone.jpg"
-    },
-    {
-        "name": "Smartphone",
-        "price": 699,
-        "img": "../public/images/smartphone.jpg"
-    },
-    {
-        "name": "Bike",
-        "price": 800,
-        "img": "../public/images/bike.jpg"
-    },
-    {
-        "name": "Kitten",
-        "price": 1500,
-        "img": "../public/images/kitten.jpg"
-    },
-    {
-        "name": "Puppy",
-        "price": 1500,
-        "img": "../public/images/puppy.jpg"
-    },
-    {
-        "name": "Auto Rickshaw",
-        "price": 2300,
-        "img": "../public/images/auto-rickshaw.jpg"
-    },
-    {
-        "name": "Horse",
-        "price": 2500,
-        "img": "../public/images/horse.jpg"
-    },
-    {
-        "name": "Acre of Farmland",
-        "price": 3000,
-        "img": "../public/images/acre-of-farmland.jpg"
-    },
-    {
-        "name": "Designer Handbag",
-        "price": 5500,
-        "img": "../public/images/designer-handbag.jpg"
-    },
-    {
-        "name": "Hot Tub",
-        "price": 6000,
-        "img": "../public/images/hot-tub.jpg"
-    },
-    {
-        "name": "Luxury Wine",
-        "price": 7000,
-        "img": "../public/images/luxury-wine.jpg"
-    },
-    {
-        "name": "Diamond Ring",
-        "price": 10000,
-        "img": "../public/images/diamond-ring.jpg"
-    },
-    {
-        "name": "Jet Ski",
-        "price": 12000,
-        "img": "../public/images/jet-ski.jpg"
-    },
-    {
-        "name": "Rolex",
-        "price": 15000,
-        "img": "../public/images/rolex.jpg"
-    },
-    {
-        "name": "Ford F-150",
-        "price": 30000,
-        "img": "../public/images/ford-f-150.jpg"
-    },
-    {
-        "name": "Tesla",
-        "price": 75000,
-        "img": "../public/images/tesla.jpg"
-    },
-    {
-        "name": "Monster Truck",
-        "price": 150000,
-        "img": "../public/images/monster-truck.jpg"
-    },
-    {
-        "name": "Ferrari",
-        "price": 250000,
-        "img": "../public/images/ferrari.jpg"
-    },
-    {
-        "name": "Single Family Home",
-        "price": 300000,
-        "img": "../public/images/single-family-home.jpg"
-    },
-    {
-        "name": "Gold Bar",
-        "price": 700000,
-        "img": "../public/images/gold-bar.jpg"
-    },
-    {
-        "name": "McDonalds Franchise",
-        "price": 1500000,
-        "img": "../public/images/mcDonalds-franchise.jpg"
-    },
-    {
-        "name": "Superbowl Ad",
-        "price": 5250000,
-        "img": "../public/images/superbowl-ad.jpg"
-    },
-    {
-        "name": "Yacht",
-        "price": 7500000,
-        "img": "../public/images/yacht.jpg"
-    },
-    {
-        "name": "M1 Abrams",
-        "price": 8000000,
-        "img": "../public/images/m1-abrams.jpg"
-    },
-    {
-        "name": "Formula 1 Car",
-        "price": 15000000,
-        "img": "../public/images/formula-1-car.jpg"
-    },
-    {
-        "name": "Apache Helicopter",
-        "price": 31000000,
-        "img": "../public/images/apache-helicopter.jpg"
-    },
-    {
-        "name": "Mansion",
-        "price": 45000000,
-        "img": "../public/images/mansion.jpg"
-    },
-    {
-        "name": "Make a Movie",
-        "price": 100000000,
-        "img": "../public/images/make-a-movie.jpg"
-    },
-    {
-        "name": "Boeing 747",
-        "price": 148000000,
-        "img": "../public/images/boeing-747.jpg"
-    },
-    {
-        "name": "Mona Lisa",
-        "price": 780000000,
-        "img": "../public/images/mona-lisa.jpg"
-    },
-    {
-        "name": "Skyscraper",
-        "price": 850000000,
-        "img": "../public/images/skyscraper.jpg"
-    },
-    {
-        "name": "Cruise Ship",
-        "price": 930000000,
-        "img": "../public/images/cruise-ship.jpg"
-    },
-    {
-        "name": "NBA Team",
-        "price": 2120000000,
-        "img": "../public/images/nba-team.jpg"
-    }
+  {
+    "id": 1,
+    "name": "Big Mac",
+    "price": 2,
+    "img": "/images/big-mac.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Flip Flops",
+    "price": 3,
+    "img": "/images/slipper.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Coca-Cola Pack",
+    "price": 5,
+    "img": "/images/coca-cola.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Movie Ticket",
+    "price": 12,
+    "img": "/images/movie-ticket.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Book",
+    "price": 15,
+    "img": "/images/book.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Lobster Dinner",
+    "price": 45,
+    "img": "/images/lobster-dinner.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Video Game",
+    "price": 60,
+    "img": "/images/video-game.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Amazon Echo",
+    "price": 99,
+    "img": "/images/amazon-echo.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Year of Netflix",
+    "price": 100,
+    "img": "/images/year-of-netflix.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Air Jordans",
+    "price": 125,
+    "img": "/images/air-jordans.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Airpods",
+    "price": 199,
+    "img": "/images/airpods.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Gaming Console",
+    "price": 299,
+    "img": "/images/gaming-console.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Drone",
+    "price": 350,
+    "img": "/images/drone.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Smartphone",
+    "price": 699,
+    "img": "/images/smartphone.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Bike",
+    "price": 800,
+    "img": "/images/bike.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Kitten",
+    "price": 1500,
+    "img": "/images/kitten.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Puppy",
+    "price": 1500,
+    "img": "/images/puppy.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Auto Rickshaw",
+    "price": 2300,
+    "img": "/images/auto-rickshaw.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Horse",
+    "price": 2500,
+    "img": "/images/horse.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Acre of Farmland",
+    "price": 3000,
+    "img": "/images/acre-of-farmland.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Designer Handbag",
+    "price": 5500,
+    "img": "/images/designer-handbag.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Hot Tub",
+    "price": 6000,
+    "img": "/images/hot-tub.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Luxury Wine",
+    "price": 7000,
+    "img": "/images/luxury-wine.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Diamond Ring",
+    "price": 10000,
+    "img": "/images/diamond-ring.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Jet Ski",
+    "price": 12000,
+    "img": "/images/jet-ski.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Rolex",
+    "price": 15000,
+    "img": "/images/rolex.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Ford F-150",
+    "price": 30000,
+    "img": "/images/ford-f-150.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Tesla",
+    "price": 75000,
+    "img": "/images/tesla.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Monster Truck",
+    "price": 150000,
+    "img": "/images/monster-truck.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Ferrari",
+    "price": 250000,
+    "img": "/images/ferrari.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Single Family Home",
+    "price": 300000,
+    "img": "/images/single-family-home.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Gold Bar",
+    "price": 700000,
+    "img": "/images/gold-bar.jpg"
+  },
+  {
+    "id": 33,
+    "name": "McDonalds Franchise",
+    "price": 1500000,
+    "img": "/images/mcdonalds-franchise.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Superbowl Ad",
+    "price": 5250000,
+    "img": "/images/superbowl-ad.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Yacht",
+    "price": 7500000,
+    "img": "/images/yacht.jpg"
+  },
+  {
+    "id": 36,
+    "name": "M1 Abrams",
+    "price": 8000000,
+    "img": "/images/m1-abrams.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Formula 1 Car",
+    "price": 15000000,
+    "img": "/images/formula-1-car.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Apache Helicopter",
+    "price": 31000000,
+    "img": "/images/apache-helicopter.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Mansion",
+    "price": 45000000,
+    "img": "/images/mansion.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Make a Movie",
+    "price": 100000000,
+    "img": "/images/make-a-movie.jpg"
+  },
+  {
+    "id": 41,
+    "name": "Boeing 747",
+    "price": 148000000,
+    "img": "/images/boeing-747.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Mona Lisa",
+    "price": 780000000,
+    "img": "/images/mona-lisa.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Skyscraper",
+    "price": 850000000,
+    "img": "/images/skyscraper.jpg"
+  },
+  {
+    "id": 44,
+    "name": "Cruise Ship",
+    "price": 930000000,
+    "img": "/images/cruise-ship.jpg"
+  },
+  {
+    "id": 45,
+    "name": "NBA Team",
+    "price": 2120000000,
+    "img": "/images/nba-team.jpg"
+  }
 ]
