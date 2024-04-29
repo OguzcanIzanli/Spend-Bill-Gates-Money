@@ -1,26 +1,29 @@
 import { createContext, useState, useContext } from "react";
+import data from "../data.json";
 
 export type Item = {
-  itemId: number;
-  quantity: number;
+  id: number;
+  name: string;
   price: number;
+  img: string;
+  quantity: string;
 };
 
 export interface MoneyContextInterface {
   items: Item[];
-  setItem: (items: Item[]) => void;
+  setItems: (items: Item[]) => void;
 }
 
 const MoneyContext = createContext<MoneyContextInterface>({
   items: [],
-  setItem: () => {},
+  setItems: () => {},
 });
 
 export const MoneyProvider = ({ children }) => {
-  const [items, setItem] = useState<Item[]>([]);
-  console.log(items);
+  const [items, setItems] = useState<Item[]>(data);
+
   return (
-    <MoneyContext.Provider value={{ items, setItem }}>
+    <MoneyContext.Provider value={{ items, setItems }}>
       {children}
     </MoneyContext.Provider>
   );

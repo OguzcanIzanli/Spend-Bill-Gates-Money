@@ -1,39 +1,52 @@
 import "./Input.style.css";
-import { useMoney } from "../../context/MoneyContext";
-import { useState, ChangeEvent } from "react";
+import { useMoney } from "../../contexts/MoneyContext";
+import { SetStateAction, useState } from "react";
+import { useEffect } from "react";
 
 interface InputProps {
-  dataId: number;
-  price: number;
+  value: string;
+  id: string;
 }
 
-const Input: React.FC<InputProps> = ({ dataId, price }) => {
-  const { items, setItem } = useMoney();
-  const [value, setValue] = useState<string>("0");
+const Input: React.FC<InputProps> = ({ value, id }) => {
+  const { items, setItems } = useMoney();
+  const [inputValue, setInputValue] = useState<string>(value);
 
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    let newValue = parseInt(event.target.value, 10);
+  useEffect(() => {
+    setInputValue(items[Number(id) - 1].quantity);
+  }, [id, items]);
 
-    if (isNaN(newValue) || newValue == 0) {
-      newValue = 0;
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const inputId = parseFloat(event.target.id);
+    let acceptedNewValue: SetStateAction<string>;
+    const newValue = event.target.value;
+
+    if (newValue.charAt(1) == "0") {
       return false;
-    }
-    setValue(newValue.toString());
-
-    const index = items.findIndex((item) => item.itemId === dataId);
-
-    if (index !== -1) {
-      // If the item exists, update its quantity
-      const updatedItem = [...items];
-      updatedItem[index].quantity = newValue;
-      setItem(updatedItem);
+    } else if (newValue == "") {
+      acceptedNewValue = "0";
+    } else if (newValue.charAt(0) == "0") {
+      acceptedNewValue = newValue.slice(1);
     } else {
-      // If the item does not exist, add it to the array
-      setItem([...items, { itemId: dataId, quantity: newValue, price: price }]);
+      acceptedNewValue = newValue;
     }
+
+    const index = items.findIndex((item) => item.id === inputId);
+
+    const updatedItem = [...items];
+    updatedItem[index].quantity = acceptedNewValue;
+    setItems(updatedItem);
+    setInputValue(acceptedNewValue);
   };
 
-  return <input type="number" value={value} onChange={handleChange} />;
+  return (
+    <input
+      value={inputValue}
+      id={`${id}-Input`}
+      type="number"
+      onChange={handleChange}
+    />
+  );
 };
 
 export default Input;

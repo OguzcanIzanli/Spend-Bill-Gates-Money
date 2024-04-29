@@ -5,4 +5,24 @@
   padding: 10px 0;
   border-radius: 5px;
   border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.disabledSellBtn {
+  pointer-events: none;
+}
+
+.clickableSellBtn {
+  background-color: #F6416C;
+  color: #ffffff;
+}
+
+.clickableBuyBtn {
+  background-color: #00B8A9;
+  color: #ffffff;
+}
+
+.disabledBuyBtn {
+  pointer-events: none;
 }

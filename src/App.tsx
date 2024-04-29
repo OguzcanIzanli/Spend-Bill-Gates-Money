@@ -1,11 +1,13 @@
 import "./App.css";
-import Item from "./components/Item";
-import { MoneyProvider } from "./context/MoneyContext";
+import Items from "./components/Items";
+import { MoneyProvider } from "./contexts/MoneyContext";
+import AccountLimit from "./components/AccountLimit";
 
 function App() {
   return (
     <MoneyProvider>
-      <Item />
+      <AccountLimit />
+      <Items />
     </MoneyProvider>
   );
 }

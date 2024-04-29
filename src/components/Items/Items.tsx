@@ -1,12 +1,9 @@
 import data from "../../data.json";
-import "./Item.style.css";
+import "./Items.style.css";
 import Button from "../Button";
 import Input from "../Input";
-// import { useState } from "react";
 
-const Item = () => {
-  // const [btnAction, setBtnAction] = useState("");
-
+const Items = () => {
   return (
     <div className="container">
       {data.map((item) => (
@@ -16,13 +13,13 @@ const Item = () => {
           <p>${item.price}</p>
 
           <div className="itemBtns">
-            <Button dataId={item.id} className="sellBtn">
+            <Button id={item.id} className="sellBtn">
               Sell
             </Button>
 
-            <Input dataId={item.id} price={item.price} />
+            <Input id={item.id} value={item.quantity} />
 
-            <Button dataId={item.id} className="buyBtn">
+            <Button id={item.id} className="buyBtn">
               Buy
             </Button>
           </div>
@@ -32,4 +29,4 @@ const Item = () => {
   );
 };
 
-export default Item;
+export default Items;
