@@ -1,21 +1,32 @@
 import "./AccountLimit.style.css";
-import { useMoney, Item } from "../../contexts/MoneyContext";
+import { useRemainingMoney } from "../../contexts/RemainingMoneyContext";
+import { useMoney } from "../../contexts/MoneyContext";
+import { useEffect } from "react";
 
 const AccountLimit = () => {
+  const { remainingMoney, setRemainingMoney } = useRemainingMoney();
   const { items } = useMoney();
 
   const limit = 100000000000;
 
-  const totalSum = items.reduce(
-    (acc: number, currentValue: Item) =>
-      acc + currentValue.price * Number(currentValue.quantity),
-    0
+  useEffect(() => {
+    const totalSum = items.reduce(
+      (acc, currentValue) =>
+        acc + currentValue.price * Number(currentValue.quantity),
+      0
+    );
+    setRemainingMoney(limit - totalSum);
+  }, [items, setRemainingMoney]);
+
+  return (
+    <div className="accountContainer">
+      <div className="remainingMoneyContainer">
+        <div className="remainingMoney">{`$${remainingMoney}`}</div>
+      </div>
+    </div>
   );
-
-  const result = limit - totalSum;
-  result < 0 ? false : result;
-
-  return <>{result}</>;
 };
 
 export default AccountLimit;
+
+// .toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")

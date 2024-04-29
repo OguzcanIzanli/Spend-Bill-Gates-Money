@@ -1,5 +1,6 @@
 import "./Button.style.css";
-import { Item, useMoney } from "../../contexts/MoneyContext";
+import { useMoney } from "../../contexts/MoneyContext";
+import { useRemainingMoney } from "../../contexts/RemainingMoneyContext";
 
 interface ButtonProps {
   children: string;
@@ -11,6 +12,7 @@ let newValue: number;
 
 const Button: React.FC<ButtonProps> = ({ children, className, id }) => {
   const { items, setItems } = useMoney();
+  const { remainingMoney } = useRemainingMoney();
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     const target = event.target as HTMLButtonElement;
@@ -37,19 +39,9 @@ const Button: React.FC<ButtonProps> = ({ children, className, id }) => {
     sellBtn = "clickableSellBtn";
   }
 
-  const limit = 100000000000;
-
-  const totalSum = items.reduce(
-    (acc: number, currentValue: Item) =>
-      acc + currentValue.price * Number(currentValue.quantity),
-    0
-  );
-
   let buyBtn = "clickableBuyBtn";
 
-  const result = limit - totalSum;
-  console.log(result);
-  if (result < items[Number(id) - 1].price) {
+  if (remainingMoney < items[Number(id) - 1].price) {
     buyBtn = "disabledBuyBtn";
   }
 
