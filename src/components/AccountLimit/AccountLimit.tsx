@@ -10,12 +10,12 @@ const AccountLimit = () => {
   const limit = 100000000000;
 
   useEffect(() => {
-    const totalSum = items.reduce(
+    const totalExpense = items.reduce(
       (acc, currentValue) =>
         acc + currentValue.price * Number(currentValue.quantity),
       0
     );
-    setRemainingMoney(limit - totalSum);
+    setRemainingMoney(limit - totalExpense);
   }, [items, setRemainingMoney]);
 
   return (

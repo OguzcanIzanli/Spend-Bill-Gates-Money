@@ -1,7 +1,6 @@
 import "./Input.style.css";
 import { useMoney } from "../../contexts/MoneyContext";
-import { SetStateAction, useState } from "react";
-import { useEffect } from "react";
+import { SetStateAction } from "react";
 
 interface InputProps {
   value: string;
@@ -11,29 +10,25 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({ value, id }) => {
   const { items, setItems } = useMoney();
 
-  const [inputValue, setInputValue] = useState<string>(value);
-
-  useEffect(() => {
-    setInputValue(items[Number(id) - 1].quantity);
-  }, [id, items]);
-
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const inputId = parseFloat(event.target.id);
-    const index = items.findIndex((item) => item.id === inputId);
-
+    const inputId = parseFloat(event.target.id); // Changing input value id
+    const index = items.findIndex((item) => item.id === inputId); // Find the data object with index
     const updatedItems = [...items];
-    let newValue = event.target.value;
-    updatedItems[index].quantity = newValue;
+
+    let newValue = event.target.value; // Input value
+    updatedItems[index].quantity = newValue; // Update the item quantity in the object array
 
     const totalItemPrice = updatedItems.reduce(
+      // Calculate total price of selected items
       (acc, currentValue) =>
         acc + currentValue.price * Number(currentValue.quantity),
       0
     );
 
     if (totalItemPrice > 100000000000) {
-      updatedItems[index].quantity = "0";
-      console.log(updatedItems);
+      // With this if statement, if the input value (quantity of item) is more than purchasing power, newValue calculated again to find maximum value.
+      updatedItems[index].quantity = "0"; // Reset the value to add calculated new value
+
       const totalItemPrice = items.reduce(
         (acc, currentValue) =>
           acc + currentValue.price * Number(currentValue.quantity),
@@ -42,11 +37,6 @@ const Input: React.FC<InputProps> = ({ value, id }) => {
       newValue = Math.floor(
         (100000000000 - totalItemPrice) / updatedItems[index].price
       ).toString();
-
-      setInputValue(newValue);
-      updatedItems[index].quantity = newValue;
-
-      return setItems(updatedItems);
     }
 
     let acceptedNewValue: SetStateAction<string>;
@@ -59,13 +49,12 @@ const Input: React.FC<InputProps> = ({ value, id }) => {
     }
 
     updatedItems[index].quantity = acceptedNewValue;
-    setInputValue(acceptedNewValue);
     setItems(updatedItems);
   };
 
   return (
     <input
-      value={inputValue}
+      value={value}
       id={`${id}-Input`}
       type="number"
       onChange={handleChange}
