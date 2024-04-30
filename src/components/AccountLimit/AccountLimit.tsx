@@ -21,7 +21,9 @@ const AccountLimit = () => {
   return (
     <div className="accountContainer">
       <div className="remainingMoneyContainer">
-        <div className="remainingMoney">{`$${remainingMoney}`}</div>
+        <div className="remainingMoney">{`$${remainingMoney
+          .toString()
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`}</div>
       </div>
     </div>
   );
@@ -29,4 +31,4 @@ const AccountLimit = () => {
 
 export default AccountLimit;
 
-// .toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+//

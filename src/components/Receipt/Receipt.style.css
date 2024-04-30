@@ -1,3 +1,8 @@
+h1 {
+  padding: 20px 0;
+  font-size: 2rem;
+}
+
 .receiptContainer {
   max-width: 1200px;
   height: auto;
@@ -5,5 +10,52 @@
   margin: 10px auto;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.close {
+  display: none;
+}
+
+.listContainer {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.itemName {
+  width: 170px;
+}
+
+.itemQuantity {
+  width: 50px;
+}
+
+.totalPrice {
+  text-align: right;
+  width: 100px;
+  color: #00b8a9;
+}
+
+.resultContainer {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.resultContainer p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.total {
+  color: #00b8a9;
+  font-weight: 600;
+  font-size: 1.2rem;
 }

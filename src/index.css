@@ -6,6 +6,7 @@
 
 body {
   background-color: #f8f3d4;
+  min-width: 400px;
 }
 
 :root {
