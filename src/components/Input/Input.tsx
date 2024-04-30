@@ -42,7 +42,7 @@ const Input: React.FC<InputProps> = ({ value, id }) => {
     let acceptedNewValue: SetStateAction<string>;
     if (newValue == "") {
       acceptedNewValue = "0";
-    } else if (newValue.charAt(0) == "0") {
+    } else if (newValue.charAt(0) == "0" || newValue.charAt(0) == "-") {
       acceptedNewValue = newValue.slice(1);
     } else {
       acceptedNewValue = newValue;
