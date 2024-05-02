@@ -1,6 +1,6 @@
 # Spend Bill Gates' Money
 
-Spend Bill Gates' Money is an online simulation or game where players are given virtual money, and they can use it to purchase various items in a virtual shopping experience. This project used technologies such as React, TypeScript, CSS and Context API.
+Spend Bill Gates' Money is an online simulation or game where players are given virtual money, and they can use it to purchase various items in a virtual shopping experience. This project used technologies such as React, TypeScript, CSS, and Context API.
 
 ## Live Site
 You can reach live website link at [Spend Bill Gates' Money](https://billgatesmoney.netlify.app/)
