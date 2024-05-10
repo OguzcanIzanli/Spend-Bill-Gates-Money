@@ -20,6 +20,8 @@ Spend Bill Gates' Money is an online simulation or game where players are given 
 
 You can access the live website [here](https://billgatesmoney.netlify.app/).
 
+https://github.com/OguzcanIzanli/Spend-Bill-Gates-Money/assets/95178772/0d20a85b-5fd7-450d-b222-90672997f975
+
 ## How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en) installed on your computer.
